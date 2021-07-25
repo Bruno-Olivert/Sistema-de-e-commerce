@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce - Gestão de Cadastros</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header>
+        <h1>SISTEMA DE GESTÃO DE CADASTROS</h1>
+    </header>
+
+    <main>
+
+        <div class="avatarAlinhamento">
+            <img class="avatar" src="https://image.flaticon.com/icons/png/512/147/147140.png" alt="avatar" width="100px">
+        </div>
+
+        <div class="title">
+           
+            
+            <h2>CADASTRO</h2>
+            <span>Dados do cliente e produto</span>
+           
+
+        </div>
+
+        <section class="divisao">
+        <div class="card">
+            <div class="lineinput">
+                <label>Nome:</label>
+                <input type="text" id="nome" placeholder="Nome">
+            </div>
+            <div class="lineinput ">
+                <label>Endereço:</label>
+                <input type="text" id="endereço" placeholder="Endereço">
+            </div>
+            <div class="lineinput ">
+                <label>E-mail:</label>
+                <input type="text" id="e-mail" placeholder="E-mail">
+            </div>
+            <div class="lineinput ">
+                <label>Celular:</label>
+                <input type="text" id="celular" placeholder="Celular">
+            </div>
+            <div class="lineinput ">
+                <label>Produto:</label>
+                <input type="text" id="produto" placeholder="Nome do Produto">
+            </div>
+            <div class="lineinput ">
+                <label>Valor:</label>
+                <input type="text" id="valor" placeholder="Valor do Produto">
+            </div>
+            <button  onclick="nome.salvar()">SALVAR</button>
+            <button  onclick="nome.cancelar()">CANCELAR</button>
+        </div>
+
+        <div class="content">
+            <table border = "1">
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Nome:</th>
+                    <th>Endereço:</th>
+                    <th>E-mail:</th>
+                    <th>Celular:</th>
+                    <th>Produto:</th>
+                    <th>Valor:</th>
+                    <th class="center">Ação</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    </main>
+
+   
+
+    <script language="JavaScript" src="js/scrip.js"></script>
+    
+</body>
+</html>
